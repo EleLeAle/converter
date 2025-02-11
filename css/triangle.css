@@ -33,3 +33,11 @@ input::-webkit-inner-spin-button {
 input[type=number]{
     -moz-appearance: textfield;
 }
+
+.tip_container{
+    border: 1px black solid;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    width: 30%;
+}
