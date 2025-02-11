@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Triangle calculator</title>
+    <link rel="stylesheet" href="../css/triangle.css">
 </head>
 <body>
+    <h1>Guest check</h1>
 
-</body>
+    <form action="../javaScript/guest_check.js" method="get" id="data_for_guest_check">
+
+        <label for="food_tot">Food total</label>
+        <input type="number" step="0.01" id="food_tot" name="food_tot" ><br>
+
+        <label for="bev_tot">Beverage total </label>
+        <input type="number" step="0.01" id="bev_tot" name="bev_tot" ><br>
+
+        <label for="pr_tax">Tax %</label>
+        <input type="number" step="0.01" id="pr_tax" name="pr_tax" ><br>
+
+        <label for="pr_tip">Tip %</label>
+        <input type="number" step="0.01" id="pr_tip" name="pr_tip" ><br>
+
+        <label for="tip">Tip</label>
+        <input type="number" step="0.01" id="tip" name="tip" ><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    <h2 id="result">Result</h2>
+    <script src="../javaScript/guest_check.js"></script>
+    </body>
 </html>
