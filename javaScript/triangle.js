@@ -5,16 +5,19 @@
 
 
 const form = document.getElementById('data_for_triangle');
+
 form.addEventListener('submit', function (event){
+
     event.preventDefault();
+
     let leg1 = Number(document.getElementById('leg1').value);
     let leg2 = Number(document.getElementById('leg2').value);
     let hypotenuse = Number(document.getElementById('hypotenuse').value);
+    let result = document.getElementById('result');
 
     console.log('leg1:',leg1, typeof leg1,'leg2:', leg2,typeof leg2,'hypotenuse:',hypotenuse, typeof hypotenuse)
 
-    let result = document.getElementById('result')
-    result.innerHTML = calcPythagorean(leg1, leg2, hypotenuse)
+    result.textContent = calcPythagorean(leg1, leg2, hypotenuse)
 
 })
 

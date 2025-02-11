@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Triangle calculator</title>
-    <link rel="stylesheet" href="../css/grocery_price.css">
+    <link rel="stylesheet" href="../css/triangle.css">
 </head>
 <body>
-<h1>Grocery</h1>
-<form action="../javaScript/grocery_price.js" method="get" id="data_for_grocery_price">
-    <label for="leg1">First leg</label>
-    <input type="number" step="0.01" id="leg1" name="leg1" ><br>
-    <label for="leg2">Second leg</label>
-    <input type="number" step="0.01" id="leg2" name="leg2" ><br>
-    <label for="hypotenuse">hypotenuse</label>
-    <input type="number" step="0.01" id="hypotenuse" name="hypotenuse" ><br>
-    <input type="submit" value="Submit">
-</form>
-<h2 id="result">Result</h2>
-<script src="../javaScript/grocery_price.js"></script>
+    <h1>Grocery price</h1>
+
+    <form action="../javaScript/grocery_price.js" method="get" id="data_for_grocery">
+
+        <label for="product_name">Product name</label>
+        <input type="text" id="product_name" name="product_name" ><br>
+
+        <label for="price_per_kg">Price per kg</label>
+        <input type="number" step="0.01" id="price_per_kg" name="price_per_kg" ><br>
+
+        <label for="amount_kg">Amount (kg) </label>
+        <input type="number" step="0.01" id="amount_kg" name="amount_kg" ><br>
+
+        <label for="pr_tax">tax %</label>
+        <input type="number" step="0.01" id="pr_tax" name="pr_tax" ><br>
+
+        <label for="delivery_fee">Delivery  fee</label>
+        <input type="number" step="0.01" id="delivery_fee" name="delivery_fee" ><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    <h2 id="result">Result</h2>
+    <script src="../javaScript/grocery_price.js"></script>
 </body>
 </html>
